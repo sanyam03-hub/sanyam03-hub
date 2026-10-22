@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="170" viewBox="0 0 1200 170" role="img" aria-labelledby="sji-title">
+  <title id="sji-title">Impact at Niyo: 1M+ users modeled, 98% lower retention spend, 28x notification CTR, 0.92 AUC churn model</title>
+  <defs>
+    <linearGradient id="sji-card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F1B30"/>
+      <stop offset="1" stop-color="#0A1222"/>
+    </linearGradient>
+    <linearGradient id="sji-num" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F1F6FA"/>
+      <stop offset="1" stop-color="#67E8F9"/>
+    </linearGradient>
+    <linearGradient id="sji-bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .sji-t   { animation: sji-rise .8s ease-out both; }
+    .sji-d1  { animation-delay: .1s; }
+    .sji-d2  { animation-delay: .3s; }
+    .sji-d3  { animation-delay: .5s; }
+    .sji-d4  { animation-delay: .7s; }
+    .sji-bar { transform-box: fill-box; transform-origin: left; animation: sji-grow 1.2s cubic-bezier(.6,0,.2,1) both; }
+    .sji-sh  { animation: sji-shine 6s ease-in-out infinite; }
+    @keyframes sji-rise  { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes sji-grow  { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes sji-shine { 0%,100% { stroke-opacity: .18; } 50% { stroke-opacity: .5; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+  </style>
+
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <g class="sji-t sji-d1">
+      <rect class="sji-sh" x="4" y="4" width="282" height="162" rx="14" fill="url(#sji-card)" stroke="#22D3EE" stroke-opacity=".25"/>
+      <text x="28" y="40" fill="#7DD3E0" font-size="12" font-weight="600" letter-spacing="2">SCALE</text>
+      <text x="26" y="98" fill="url(#sji-num)" font-size="50" font-weight="700">1M+</text>
+      <text x="28" y="128" fill="#CBD5E1" font-size="15">users modeled in production</text>
+      <rect class="sji-bar" x="28" y="144" width="200" height="3" rx="1.5" fill="url(#sji-bar)"/>
+    </g>
+    <g class="sji-t sji-d2">
+      <rect class="sji-sh" x="308" y="4" width="282" height="162" rx="14" fill="url(#sji-card)" stroke="#22D3EE" stroke-opacity=".25"/>
+      <text x="332" y="40" fill="#7DD3E0" font-size="12" font-weight="600" letter-spacing="2">CHURN · SURVIVAL</text>
+      <text x="330" y="98" fill="url(#sji-num)" font-size="50" font-weight="700">98%</text>
+      <text x="332" y="128" fill="#CBD5E1" font-size="15">lower retention campaign spend</text>
+      <rect class="sji-bar" x="332" y="144" width="200" height="3" rx="1.5" fill="url(#sji-bar)"/>
+    </g>
+    <g class="sji-t sji-d3">
+      <rect class="sji-sh" x="612" y="4" width="282" height="162" rx="14" fill="url(#sji-card)" stroke="#22D3EE" stroke-opacity=".25"/>
+      <text x="636" y="40" fill="#7DD3E0" font-size="12" font-weight="600" letter-spacing="2">RECOMMENDATION</text>
+      <text x="634" y="98" fill="url(#sji-num)" font-size="50" font-weight="700">28×</text>
+      <text x="636" y="128" fill="#CBD5E1" font-size="15">notification CTR, A/B validated</text>
+      <rect class="sji-bar" x="636" y="144" width="200" height="3" rx="1.5" fill="url(#sji-bar)"/>
+    </g>
+    <g class="sji-t sji-d4">
+      <rect class="sji-sh" x="916" y="4" width="280" height="162" rx="14" fill="url(#sji-card)" stroke="#22D3EE" stroke-opacity=".25"/>
+      <text x="940" y="40" fill="#7DD3E0" font-size="12" font-weight="600" letter-spacing="2">MODEL QUALITY</text>
+      <text x="938" y="98" fill="url(#sji-num)" font-size="50" font-weight="700">0.92</text>
+      <text x="940" y="128" fill="#CBD5E1" font-size="15">AUC · 90.1% precision (churn)</text>
+      <rect class="sji-bar" x="940" y="144" width="200" height="3" rx="1.5" fill="url(#sji-bar)"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-labelledby="sjf-title">
+  <title id="sjf-title">Thanks for stopping by</title>
+  <defs>
+    <linearGradient id="sjf-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="sjf-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <style>
+    .sjf-wave  { stroke-dasharray: 1; animation: sjf-draw 3s cubic-bezier(.6,0,.2,1) both; }
+    .sjf-spark { animation: sjf-move 5s ease-in-out infinite; }
+    .sjf-txt   { animation: sjf-fade 1.4s ease-out .6s both; }
+    @keyframes sjf-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes sjf-move { 0% { transform: translateX(0); opacity: 0; } 10%,90% { opacity: 1; } 100% { transform: translateX(1000px); opacity: 0; } }
+    @keyframes sjf-fade { from { opacity: 0; } to { opacity: 1; } }
+    @media (prefers-reduced-motion: reduce) { * { animation: none !important; } .sjf-spark { display: none; } }
+  </style>
+  <path class="sjf-wave" pathLength="1" d="M100 40 C 250 20, 350 60, 500 40 S 750 20, 900 40 S 1050 60, 1100 40" fill="none" stroke="url(#sjf-line)" stroke-width="1.6"/>
+  <circle class="sjf-spark" cx="100" cy="40" r="10" fill="url(#sjf-glow)"/>
+  <text class="sjf-txt" x="600" y="88" text-anchor="middle" fill="#94A3B8" font-family="Consolas, 'SF Mono', Menlo, monospace" font-size="14" letter-spacing="2">model.fit(curiosity) → insights that ship</text>
+</svg>

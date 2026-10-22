@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="sjh-title sjh-desc">
+  <title id="sjh-title">Sanyam Jain — Data Scientist · ML Engineer · Published Researcher</title>
+  <desc id="sjh-desc">Animated banner with a technical grid, a graph network, and a time-series line that turns into a dashed forecast.</desc>
+  <defs>
+    <linearGradient id="sjh-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060A14"/>
+      <stop offset="0.55" stop-color="#0A1222"/>
+      <stop offset="1" stop-color="#0D1A2E"/>
+    </linearGradient>
+    <radialGradient id="sjh-glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#22D3EE" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sjh-glow2" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#14B8A6" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="sjh-line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#14B8A6" stop-opacity="0.15"/>
+      <stop offset="0.6" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+    <linearGradient id="sjh-under" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22D3EE"/>
+      <stop offset="1" stop-color="#14B8A6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="sjh-name" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F1F6FA"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+    <pattern id="sjh-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#22D3EE" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <filter id="sjh-blur" x="-20%" y="-200%" width="140%" height="500%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+    <linearGradient id="sjh-fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="0.75" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="sjh-gridmask">
+      <rect width="1200" height="360" fill="url(#sjh-fade)"/>
+    </mask>
+  </defs>
+
+  <style>
+    .sjh-drift  { animation: sjh-drift 14s ease-in-out infinite alternate; }
+    .sjh-drift2 { animation: sjh-drift2 18s ease-in-out infinite alternate; }
+    .sjh-spin   { transform-origin: 1010px 140px; animation: sjh-spin 40s linear infinite; }
+    .sjh-spinr  { transform-origin: 1010px 140px; animation: sjh-spin 60s linear infinite reverse; }
+    .sjh-draw   { stroke-dasharray: 1; stroke-dashoffset: 0; animation: sjh-draw 4s cubic-bezier(.6,0,.2,1) both; }
+    .sjh-fc     { animation: sjh-fade 1.2s ease-out 3.6s both; }
+    .sjh-under  { transform-origin: 70px 0; animation: sjh-grow 1.4s cubic-bezier(.6,0,.2,1) 0.6s both; }
+    .sjh-in1    { animation: sjh-rise .9s ease-out .1s both; }
+    .sjh-in2    { animation: sjh-rise .9s ease-out .3s both; }
+    .sjh-in3    { animation: sjh-rise .9s ease-out .5s both; }
+    .sjh-in4    { animation: sjh-rise .9s ease-out .9s both; }
+    .sjh-pulse  { animation: sjh-pulse 3s ease-in-out infinite; }
+    .sjh-p2     { animation-delay: .8s; }
+    .sjh-p3     { animation-delay: 1.6s; }
+    .sjh-p4     { animation-delay: 2.2s; }
+    .sjh-edge   { stroke-dasharray: 4 6; animation: sjh-flow 2.5s linear infinite; }
+    .sjh-dot    { animation: sjh-blink 1.6s ease-in-out infinite; }
+    @keyframes sjh-drift  { from { transform: translate(0,0); } to { transform: translate(260px,30px); } }
+    @keyframes sjh-drift2 { from { transform: translate(0,0); } to { transform: translate(-220px,-20px); } }
+    @keyframes sjh-spin   { to { transform: rotate(360deg); } }
+    @keyframes sjh-draw   { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+    @keyframes sjh-fade   { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes sjh-grow   { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    @keyframes sjh-rise   { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes sjh-pulse  { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+    @keyframes sjh-flow   { to { stroke-dashoffset: -20; } }
+    @keyframes sjh-blink  { 0%,100% { opacity: 1; } 50% { opacity: .25; } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; }
+    }
+  </style>
+
+  <!-- background -->
+  <rect width="1200" height="360" rx="18" fill="url(#sjh-bg)"/>
+  <rect width="1200" height="360" rx="18" fill="url(#sjh-grid)" mask="url(#sjh-gridmask)"/>
+  <circle class="sjh-drift"  cx="260" cy="150" r="260" fill="url(#sjh-glow)"/>
+  <circle class="sjh-drift2" cx="1000" cy="160" r="240" fill="url(#sjh-glow2)"/>
+
+  <!-- orbital geometry + graph network (spatiotemporal GNN nod) -->
+  <g fill="none" stroke="#22D3EE">
+    <circle class="sjh-spin"  cx="1010" cy="140" r="118" stroke-opacity="0.18" stroke-dasharray="2 10"/>
+    <circle class="sjh-spinr" cx="1010" cy="140" r="84"  stroke-opacity="0.12" stroke-dasharray="40 14"/>
+    <circle cx="1010" cy="140" r="150" stroke-opacity="0.06"/>
+  </g>
+  <g stroke="#5EEAD4" stroke-opacity="0.55" stroke-width="1.4" fill="none">
+    <path class="sjh-edge" d="M1010 140L940 92"/>
+    <path class="sjh-edge" d="M1010 140L1084 104"/>
+    <path class="sjh-edge" d="M1010 140L1048 214"/>
+    <path class="sjh-edge" d="M1010 140L936 196"/>
+    <path class="sjh-edge" d="M940 92L1084 104"/>
+    <path class="sjh-edge" d="M1084 104L1048 214"/>
+    <path class="sjh-edge" d="M936 196L1048 214"/>
+    <path class="sjh-edge" d="M940 92L936 196"/>
+  </g>
+  <g fill="#0A1222" stroke="#22D3EE" stroke-width="2">
+    <circle class="sjh-pulse"         cx="1010" cy="140" r="9" fill="#22D3EE"/>
+    <circle class="sjh-pulse sjh-p2"  cx="940"  cy="92"  r="6"/>
+    <circle class="sjh-pulse sjh-p3"  cx="1084" cy="104" r="6"/>
+    <circle class="sjh-pulse sjh-p4"  cx="1048" cy="214" r="6"/>
+    <circle class="sjh-pulse sjh-p2"  cx="936"  cy="196" r="6"/>
+  </g>
+
+  <!-- text -->
+  <g font-family="'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text class="sjh-in1" x="72" y="96" fill="#22D3EE" font-size="15" font-weight="600" letter-spacing="4">HELLO, I'M</text>
+    <text class="sjh-in2" x="68" y="162" fill="url(#sjh-name)" font-size="66" font-weight="700" letter-spacing="-1">Sanyam Jain</text>
+    <text class="sjh-in3" x="72" y="204" fill="#CBD5E1" font-size="21" font-weight="400">Data Scientist <tspan fill="#22D3EE">·</tspan> ML Engineer <tspan fill="#22D3EE">·</tspan> Published Researcher</text>
+    <text class="sjh-in4" x="72" y="244" fill="#7DD3E0" font-size="13" font-family="Consolas, 'SF Mono', Menlo, monospace" letter-spacing="1">&gt; forecasting · production ML · LLM systems</text>
+  </g>
+  <g class="sjh-under">
+    <rect x="70" y="217" width="430" height="3" rx="1.5" fill="url(#sjh-under)" filter="url(#sjh-blur)"/>
+    <rect x="70" y="217" width="430" height="2" rx="1" fill="url(#sjh-under)"/>
+  </g>
+
+  <!-- time series: observed (solid) then forecast (dashed) -->
+  <path class="sjh-draw" pathLength="1" fill="none" stroke="url(#sjh-line)" stroke-width="2.2" stroke-linejoin="round"
+    d="M0,292.4 L10,282.4 L20,281.4 L30,288.5 L40,295.7 L50,296.2 L60,290.6 L70,285.1 L80,284.0 L90,285.2 L100,283.4 L110,277.3 L120,272.3 L130,275.3 L140,287.3 L150,301.2 L160,308.6 L170,307.9 L180,304.3 L190,304.3 L200,308.1 L210,310.7 L220,308.6 L230,304.7 L240,305.9 L250,314.9 L260,326.4 L270,331.9 L280,327.4 L290,317.3 L300,309.4 L310,306.8 L320,305.7 L330,301.2 L340,293.8 L350,289.5 L360,292.5 L370,300.2 L380,304.2 L390,299.0 L400,287.4 L410,277.6 L420,274.9 L430,277.4 L440,279.2 L450,278.1 L460,277.9 L470,283.9 L480,295.4 L490,305.3 L500,306.7 L510,300.2 L520,293.3 L530,293.3 L540,299.9 L550,307.3 L560,310.6 L570,311.4 L580,315.0 L590,323.1 L600,330.6 L610,330.3 L620,320.7 L630,308.3 L640,301.7 L650,303.0 L660,307.3 L670,307.9 L680,304.1 L690,300.8 L700,301.7 L710,304.4 L720,302.2 L730,291.9 L740,278.3 L750,270.1 L760,271.8 L770,279.5 L780,285.6 L790,286.6 L800,285.9 L810,288.7 L820,294.8"/>
+  <g class="sjh-fc">
+    <path fill="none" stroke="#A5F3FC" stroke-opacity="0.75" stroke-width="2" stroke-dasharray="6 6" stroke-linejoin="round"
+      d="M820,294.8 L830,298.8 L840,295.9 L850,288.3 L860,284.2 L870,289.5 L880,302.1 L890,313.7 L900,318.6 L910,318.2 L920,318.3 L930,321.5 L940,324.1 L950,320.8 L960,311.4 L970,303.0 L980,302.4 L990,309.8 L1000,317.8 L1010,319.0 L1020,312.7 L1030,304.9 L1040,300.6 L1050,298.8 L1060,294.1 L1070,284.5 L1080,274.8 L1090,272.4 L1100,279.4 L1110,289.7 L1120,294.8 L1130,291.8 L1140,285.6 L1150,283.0 L1160,285.3 L1170,287.9 L1180,286.6 L1190,283.6 L1200,285.4"/>
+    <line x1="820" y1="255" x2="820" y2="345" stroke="#22D3EE" stroke-opacity="0.35" stroke-dasharray="2 4"/>
+    <circle class="sjh-dot" cx="820" cy="294.8" r="4.5" fill="#22D3EE"/>
+    <text x="830" y="262" fill="#7DD3E0" font-size="11" font-family="Consolas, 'SF Mono', Menlo, monospace" letter-spacing="1">t+1 forecast →</text>
+  </g>
+</svg>
