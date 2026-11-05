@@ -5,7 +5,7 @@
 <p align="center">
   <a href="https://www.linkedin.com/in/sanyamjain03/"><img src="https://img.shields.io/badge/LinkedIn-0A1222?style=for-the-badge&logo=linkedin&logoColor=22D3EE" alt="LinkedIn"/></a>
   <a href="mailto:sanyamjain2703@gmail.com"><img src="https://img.shields.io/badge/Email-0A1222?style=for-the-badge&logo=gmail&logoColor=22D3EE" alt="Email"/></a>
-  <a href="https://sanyam03-hub.github.io/Portfolio-project/"><img src="https://img.shields.io/badge/Portfolio-0A1222?style=for-the-badge&logo=googlechrome&logoColor=22D3EE" alt="Portfolio"/></a>
+  <a href="https://sanyam-jain-steel.vercel.app/"><img src="https://img.shields.io/badge/Portfolio-0A1222?style=for-the-badge&logo=googlechrome&logoColor=22D3EE" alt="Portfolio"/></a>
   <a href="https://www.nature.com/articles/s41598-026-37917-w"><img src="https://img.shields.io/badge/Scientific_Reports-2026-0A1222?style=for-the-badge&labelColor=0A1222&color=14B8A6&logo=bookstack&logoColor=22D3EE" alt="Scientific Reports 2026"/></a>
 </p>
 
